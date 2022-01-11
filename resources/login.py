@@ -55,4 +55,4 @@ class UserLoginResource(Resource):
         # 로그인에 성공했다면 JWT를 발행 및 반환
         user_id = record_list[0]['id']
         access_token =create_access_token(user_id)
-        return {'reult':'로그인 성공', 'msg':'당신의 활동을 기대합니다!', 'access_token':access_token}
+        return {'reult':'로그인 성공', 'msg':'Memos 4U', 'access_token':access_token}
